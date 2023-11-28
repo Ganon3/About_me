@@ -100,12 +100,16 @@ footer {
 /**/
 
 #HomeContent img {   /* this is index.html part*/
-  max-width: 1600px; 
+  max-width: 1600px;  
 } 
 #HomeContent main {
   text-align: center;
   margin: 0 auto;
   margin-bottom: -180px;
+}
+#HomeContent main img {
+  width: 100%;
+  height: auto;
 }
 #HomeContent p {
   font-size: 28px;
