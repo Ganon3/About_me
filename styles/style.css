@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=M+PLUS+Rounded+1c&display=swap');
+
+/* genral targeting */
+/** {border: solid 1px blue;}*/
+h1,h2,h3,h4,h5,h6 {font-family: "M PLUS Rounded 1c";}
+p {font-family:  "Comfortaa", Helvetica, sans-serif;}
+img {vertical-align: middle;}
+a { font-weight: bold;}
+.content {
+    max-width: 1600px;
+    margin: 6px auto;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+}
+
+/* slide show genral info*/
+.mySlides {display: none}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px){
+  .prev, .next,.text {font-size: 11px} /* On smaller screens, decrease text size */
+}
+
+/* header info */
+header nav {
+  display: grid;
+  grid-template-columns: 150px 1fr 1fr;
+  grid-template-rows: 150px 150px;
+  text-align: center;
+  justify-items: end;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 30px;
+  font-family: "M PLUS Rounded 1c";
+  background-color:  #fef9f0;
+  padding: 11px 0px;
+}
+#Logolink {
+  width: 100%;
+  grid-column-start: 1;
+  grid-row: 1/3;
+}
+#aboutMeP {
+  display: inline;
+  grid-column-start: 2;
+  grid-row: 1/2;
+} 
+#resumeP  {
+  display: inline;
+  position: relative;
+  right: 100px;
+  grid-column-start: 3;
+  grid-row: 1/2;
+} 
+#galoryP  {
+  display: inline;
+  grid-column-start: 2;
+  grid-row: 2/3;
+} 
+#projectP {
+  display: inline;
+  position: relative;
+  right: 100px;
+  grid-column-start: 3;
+  grid-row: 2/3;
+} 
+
+#aboutMeP:hover {color: #000000}
+#resumeP:hover {color: #000000}
+#galoryP:hover {color: #000000}
+#projectP:hover {color: #000000}
+
+/* footer info*/
+footer a {color: #808080; text-decoration: none; font-size: 1.2em;}
+footer a:hover {color: #000000;}
+footer .social img {padding-top: 15px;}
+footer p {font-size: 22px; padding: auto 20px;}
+footer {
+    background-color: #FBF8F2;
+    padding: 25px 50px;
+    margin-top: 200px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/**/
+/**/
+
+#HomeContent img {   /* this is index.html part*/
+  max-width: 1600px; 
+} 
+#HomeContent main {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: -180px;
+}
+#HomeContent p {
+  font-size: 28px;
+}
+#HomeContent h1 {
+  font-size: 36px;
+}
+
+
