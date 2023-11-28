@@ -9,29 +9,19 @@
 <body>
 <div id="galorieContent" class="content">
 
-  <head id="HeadGrid">
+  <header>
+    <nav>
     <a id="Logolink" href="index.html"><img src="images/C3_LOGO.png" alt="The C3_LOGO"></a>
     <a id="aboutMeP" href="index.html">About Me</a>
     <a id="resumeP" href="resume.html">Resume</a>
-    <a id="galoryP"href="galory.html">galory</a>
-    <a id="projectP" href="projects.html">projects</a>
-  </head>
+    <a id="galoryP" href="galory.html">Galory</a>
+    <a id="projectP" href="projects.html">Projects</a>
+    </nav>
+</header>
     <!-- next section-->
 
     <style>
-        * {box-sizing: border-box}
-        body {font-family: Verdana, sans-serif; margin:0}
-        .mySlides {display: none}
-        img {vertical-align: middle;}
-        
-        /* Slideshow container */
-        .slideshow-container {
-          max-width: 1000px;
-          position: relative;
-          margin: auto;
-        }
-        
-        /* Next & previous buttons */
+        /* slide show unique will be dirctly targeted*/
         .prev, .next {
           cursor: pointer;
           position: absolute;
@@ -52,8 +42,6 @@
           right: 0;
           border-radius: 3px 0 0 3px;
         }
-        
-        /* On hover, add a black background color with a little bit see-through */
         .prev:hover, .next:hover {
           background-color: rgba(0,0,0,0.8);
         }
@@ -78,37 +66,6 @@
           top: 0;
         }
         
-        /* The dots/bullets/indicators */
-        .dot {
-          cursor: pointer;
-          height: 15px;
-          width: 15px;
-          margin: 0 2px;
-          background-color: #bbb;
-          border-radius: 50%;
-          display: inline-block;
-          transition: background-color 0.6s ease;
-        }
-        
-        .active, .dot:hover {
-          background-color: #717171;
-        }
-        
-        /* Fading animation */
-        .fade {
-          animation-name: fade;
-          animation-duration: 1.5s;
-        }
-        
-        @keyframes fade {
-          from {opacity: .4} 
-          to {opacity: 1}
-        }
-        
-        /* On smaller screens, decrease text size */
-        @media only screen and (max-width: 300px) {
-          .prev, .next,.text {font-size: 11px}
-        }
         </style>
         
         <div class="slideshow-container">
@@ -134,15 +91,7 @@
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
         
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-        
+      </div>
         <script>
         let slideIndex = 1;
         showSlides(slideIndex);
@@ -179,27 +128,22 @@
             <p id="GGi4">WODKFNghjkiuytrdcvghEWF wodfnqwnEWF QD qwekfqweo QE</p>
         </section>
     <!-- continue-->
-    <footer id="HomeFooter">
-        <ul>
-            <li><img src="https://picsum.photos/320/240"></li>
-            <li><P>You can fine me on these sightes</P></li>
-            <li>
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="fb icon">
-            </a>
-            </li>
-            <li>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
-            </a>
-            </li>
-            <li>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="instagram icon">
-            </a>
-            </li>
-        </ul>
-    </footer>
+    <footer>
+      <p> My Ganon-Fuad Life &copy; 2023 - Fuad J Torres </p>
+      <p><a href="site-plan.html">Site Plan</a></p>
+      <p><a href="contactus.html">Contact and Form </a></p>
+      <div class="social">
+          <a href="https://facebook.com" target="_blank"> <!-- target="_blank"-->>
+              <img src="images/facebook.png" alt="fb icon">
+          </a>
+          <a href="https://twitter.com" target="_blank">
+              <img src="images/Xtwitter.jpg" alt="twitter icon">
+          </a>
+          <a href="https://instagram.com" target="_blank">
+              <img src="images/instagram.png" alt="instagram icon">
+          </a>
+      </div>
+  </footer>
 </div>
 </body>
 </html>
