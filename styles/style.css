@@ -11,6 +11,7 @@ a { font-weight: bold;}
   margin: 6px auto;
   background-color: #f8f8f8;
   box-sizing: border-box;
+  min-width: 1100px;
 }
 
 /* slide show genral info*/
@@ -19,6 +20,8 @@ a { font-weight: bold;}
   max-width: 1000px;
   position: relative;
   margin: auto;
+  margin-top: 20px;
+  margin-bottom: -180px;
 }
 .fade {
   animation-name: fade;
@@ -124,6 +127,7 @@ footer {
   cursor: pointer;
   position: absolute;
   width: auto;
+  top: calc(0% + 700px);
   padding: 16px;
   color: #000000;
   font-weight: bold;
@@ -132,7 +136,6 @@ footer {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
 /* Position the "next button" to the right */
 #ResumeContent .next {        
   right: 0;
@@ -140,7 +143,7 @@ footer {
 }
 #ResumeContent .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
-}
+}     
 /* Caption text */
 #ResumeContent .text {
   color: #f2f2f2;
@@ -171,7 +174,6 @@ footer {
     display: grid;
     grid-template-columns: 400px 1fr 1fr;
     grid-template-rows: 150px 150px;
-    min-width: 1100px;
   }
 
 }
