@@ -99,8 +99,10 @@ footer {
 /**/
 /**/
 
+#HomeContent {border: 10px solid #808080;}
 #HomeContent img {   /* this is index.html part*/
-  max-width: 1600px;  
+  max-width: 1600px;
+    
 } 
 #HomeContent main {
   text-align: center;
