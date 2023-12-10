@@ -168,7 +168,7 @@ footer {
 /**/
 /* this is the Projects Container */
 
-#ProjectsContainer * {border: green solid 5px;}
+
 #ProjectsContainer main img {
   width: 100%; /* get red of this later*/
   height: auto;
@@ -191,7 +191,7 @@ footer {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  margin: 0px 5px;
+  margin: 0px -43px;
 }
 /* Position the "next button" to the right */
 #ProjectsContainer .next {
