@@ -163,9 +163,206 @@ footer {
   position: absolute;
   top: 0;
 }
-      
 
+/**/
+/**/
+/* this is the Projects Container */
 
+#ProjectsContainer * {border: green solid 5px;}
+#ProjectsContainer main img {
+  width: 100%; /* get red of this later*/
+  height: auto;
+  max-width: 1600px;
+}
+#ProjectsContainer section {
+  margin-top: 400px;
+}
+/* slide show unique will be dirctly targeted*/
+#ProjectsContainer .prev, #ProjectsContainer .next {
+  cursor: pointer;
+  position: absolute;
+  top: 46%;
+  width: auto;
+  padding: 16px;
+  background-color: rgba(141, 141, 141, 0.9);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  margin: 0px 5px;
+}
+/* Position the "next button" to the right */
+#ProjectsContainer .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+#ProjectsContainer .prev:hover, #ProjectsContainer .next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#ProjectsContainer .ProjectsSlides {
+  display: grid;
+  grid-template-columns: 0px 1fr 1fr 0px;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+#ProjectsContainer .prev{
+  grid-column-start: 1;
+}
+#ProjectsContainer .ProjectsSlides .MSI {
+  grid-column-start: 2;
+  float: left;
+}
+#ProjectsContainer .ProjectsSlides .MSP {
+  grid-column-start: 3;
+  float: right;
+  font-size: 27px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100% - 5px);
+  margin: 20px;
+  text-align: center;
+}
+#ProjectsContainer .next {
+  grid-column-start: 4;
+}
+#ProjectsContainer .slideshow-container {
+  max-width: 1500px;
+  position: sticky;
+  margin: 20px auto;
+}
+#ProjectGrid {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 25px;
+  padding: 40px;
+  margin-bottom: -180px;
+}
+#ProjectGrid p {
+  font-size: 27px;
+}
+#ProjectsContainer h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: -40px;
+}
+#ProjectGrid img {
+  border: 5px solid #4e5c63;
+}
+#PG1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding: 20px;
+  background-color: #2b2b2b;
+}
+#PG2 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin: 20px;
+}
+#PG3 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  padding: 20px;
+  background-color: #2b2b2b;
+}
+#PG4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin: 20px;
+}
+
+/**/
+/**/
+
+/* this is form*/
+
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 400px;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input, textarea {
+  /* To make sure that all text fields have the same font settings
+  By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+  between the labels and their text fields */
+  margin-left: 0.5em;
+}
+
+#feedback {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: .5em;
+  /* make this element invisible until we are ready for it */
+  display: none;      
+}
+.moveDown {
+  margin-top: 3em;
+}
 
 
 @media screen and (max-width: 1410px) {
