@@ -288,7 +288,7 @@ footer {
 /**/
 /**/
 
-/* this is form*/
+/* this is for the form*/
 
 form {
   /* Center the form on the page */
@@ -495,12 +495,10 @@ button {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-    
 /* On hover, add a black background color with a little bit see-through */
 #GaloryContent .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.9);
 }
-    
 /* Caption text */
 #GaloryContent .text {
   color: #f2f2f2;
@@ -511,7 +509,6 @@ button {
   width: 100%;
   text-align: center;
 }
-    
 /* this is the H1 actualy */
 #GaloryContent .numbertext {
   color: #f2f2f2;
@@ -520,13 +517,11 @@ button {
   position: center;
   margin-top: 50px;
 }
-    
 /* Fading animation */
 #GaloryContent .fade {
   animation-name: fade;
   animation-duration: 1.5s;
 }
-    
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
