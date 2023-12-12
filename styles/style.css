@@ -370,16 +370,23 @@ button {
 
 /**/
 /**/
-/* This is for my lazy Galory section*/
+/* This is for my lazy Galory section */
 
+#GaloryContent {
+  background-color: #f8f8f8;
+  max-width: 1600px;
+}
 .slideH1{
   text-align: center;
-  order: 1  
+  order: 1;
 }
 #h1GG {
-  margin-top: 50px;
+  margin-top: 20px;
   background-color: #f2f2f2;
   padding: 30px;
+  margin: 0 auto;
+  max-width: 1600px;
+  font-size: 45px;
 }
 #gridGalory {
   display: grid;
@@ -395,7 +402,7 @@ button {
   grid-template-columns: repeat(4, calc(25% - 20px)); /* 350px */
   grid-template-rows: repeat(4, 300px); 
   margin-bottom: -100px;
-  
+  margin: 0 auto;
 }
 #gridGalory * {
   width: 100%;
@@ -406,7 +413,6 @@ button {
   box-sizing: border-box;
   margin: 0 auto;
  /*border: solid 2px #975D2E; */
-  
 }
 #GGimg {
   grid-column-start: 1;
@@ -462,24 +468,20 @@ button {
 }    
 /* Slideshow container */
 #GaloryContent .slideshow-container {
-  width: calc(100%);
+  width: 100%;
+  max-width: 1600px;
   position: relative;
-  margin-top: 1px;
   background-color:#f2f2f2;
-  
 }
-#GaloryContent .slideshow-container p {
+#GaloryContent .mySlides p {
   padding: 20px;
-  text-align: start;
-  font-size: 35px;
-}
-    
+  font-size: 33px;
+}   
 /* Next & previous buttons */
-#GaloryContent .prev, .next {
+#GaloryContent .prev, #GaloryContent .next {
   cursor: pointer;
-  position: absolute;
-  top: calc(0% + 700px);
-  width: auto;
+  position: fixed;
+  top: calc(0% + 1050px);
   padding: 16px;
   color:#f2f2f2;
   font-weight: bold;
@@ -492,32 +494,19 @@ button {
 }
 /* Position the "next button" to the right */
 #GaloryContent .next {
-  right: 0;
+  right: 0%;
   border-radius: 3px 0 0 3px;
 }
-/* On hover, add a black background color with a little bit see-through */
 #GaloryContent .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.9);
-}
-/* Caption text */
-#GaloryContent .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
 }
 /* this is the H1 actualy */
 #GaloryContent .numbertext {
   color: #f2f2f2;
-  font-size: 20px;
+  font-size: 30px;
   padding: 8px 12px;
   position: center;
-  margin-top: 50px;
 }
-/* Fading animation */
 #GaloryContent .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -526,7 +515,9 @@ button {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
+#GaloryContent footer {
+  margin-top: 90px;
+}
 
 @media screen and (max-width: 1410px) {
   footer {display: grid;}
